@@ -199,6 +199,7 @@
 
 
 function exibirProduto(nome, preco) {
-return "Produto: " + nome + ", Preço: R$ " + Number(preco).toFixed(2);
+    return "Produto: " + nome + ", Preço: " + 
+      preco.toLocaleString("pt-BR");
 }
-console.log(exibirProduto("Celular", 2000.50));
+console.log(exibirProduto("Celular", preco));
